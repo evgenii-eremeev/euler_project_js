@@ -22,3 +22,26 @@ helpers.makePrimeList = function(limit) {
     }
     return primeList;
 };
+
+helpers.primeFactors = function(num) {
+    var primes = this.makePrimeList(num + 1);
+    var temp = num;
+    var factors = [];
+    while (temp > 1) {
+        for (var i = 0, len = primes.length; i < len; i++) {
+            if (temp % primes[i] === 0) {
+                factors.push(primes[i]);
+                temp /= primes[i];
+            }
+        }
+    }
+    return factors;
+};
+
+
+
+
+
+
+
+
