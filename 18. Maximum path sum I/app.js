@@ -27,7 +27,6 @@ function maxPath(data) {
   var newData = data.slice(0, -2);
   newData.push(newLast);
   return maxPath(newData);
-
 }
 
 console.log(maxPath(data));
