@@ -37,11 +37,3 @@ helpers.primeFactors = function(num) {
     }
     return factors;
 };
-
-
-
-
-
-
-
-
